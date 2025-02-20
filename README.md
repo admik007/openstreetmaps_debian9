@@ -18,3 +18,9 @@ su osm -c "osm2pgsql --slim --database world --cache 2048 --cache-strategy spars
 git clone https://github.com/openstreetmap/mod_tile.git
 git clone https://github.com/gravitystorm/openstreetmap-carto.git
 ```
+```
+su osm -c "render_list -m default -a -z 0 -Z 5"
+```
+```
+cat /var/run/renderd/renderd.stats | grep -v ": 0"
+```
