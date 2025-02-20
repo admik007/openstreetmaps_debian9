@@ -14,3 +14,7 @@ gosu postgres psql -c "CREATE EXTENSION postgis;" -d world
 ```
 su osm -c "osm2pgsql --slim --database world --cache 2048 --cache-strategy sparse --hstore --style /home/osm/openstreetmap-carto/openstreetmap-carto.style /PATH_FOR_FILE/FILENAME.osm.pbf"
 ```
+```
+git clone https://github.com/openstreetmap/mod_tile.git
+git clone https://github.com/gravitystorm/openstreetmap-carto.git
+```
